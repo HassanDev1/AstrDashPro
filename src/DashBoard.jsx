@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import List from './Components/List'
 import Charts from "./Components/LineChart"
 import TempChart from "./Components/tempChart"
+import VisualizationToggle from './Components/VisualizationToggle'
 
 
 
@@ -56,8 +57,9 @@ export default function DashBoard({ data }) {
         color='whiteAlpha.700'
       >
           <VStack mt="10em">
-          <Charts data={data}/>
-          <TempChart data={data}/>
+{/*           <Charts data={data}/>
+          <TempChart data={data}/> */}
+            <VisualizationToggle data={data}/>
           </VStack>
            
       </VStack>
